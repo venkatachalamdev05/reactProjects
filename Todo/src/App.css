@@ -1,0 +1,22 @@
+.todo-btn{
+    display: flex;
+    justify-content: end;
+}
+
+.no-task{
+    margin-left: 120px;
+}
+
+
+.btn:hover{
+    color: white !important;
+}
+
+
+*{
+    background-color: rgb(236, 242, 243);
+}
+
+.trash{
+    background-color: white !important;
+}

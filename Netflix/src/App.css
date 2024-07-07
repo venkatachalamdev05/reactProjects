@@ -1,0 +1,46 @@
+body {
+    background-color: black !important;
+}
+
+.link {
+    text-decoration: none;
+    padding: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+* {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+
+}
+
+
+.movie-section {
+    display: flex;
+    overflow-x: scroll;
+}
+
+
+.movie-section::-webkit-scrollbar {
+    display: none;
+}
+
+.movie-images {
+    transition: transform 1s;
+    padding: 25px;
+}
+
+
+.movie-images:hover {
+    transform: scale(1.5);
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+}
+
