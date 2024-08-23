@@ -31,6 +31,7 @@ function Header() {
     }
 
     function addItem() {
+        console.log("Hello");
         let task = prompt("New Task", "Buy Grocery");
         if (task) {
             db.collection('todo').add(
@@ -61,7 +62,9 @@ function Header() {
     }
 
     function updateValue(item) {
+        console.log(item);
         const inputs = prompt(`Enter the task to update`, `${item.taskName}`)
+        console.log(inputs);
         if (inputs) {
             db.collection('todo').doc(item.id).update({
                 status: item.status,

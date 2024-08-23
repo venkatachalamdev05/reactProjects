@@ -4,7 +4,7 @@ import { db } from "./Firebase";
 import './App.css'
 import { Alert, Spinner } from "react-bootstrap";
 
-function Header() {
+export function Header() {
     const [contactDetail, setContactDetail] = useState([]);
     const [filterData, setFilterData] = useState([]);
     const [show, setShow] = useState(false);
@@ -136,7 +136,7 @@ function Header() {
                 </div>
 
                 {
-                    !spinner && contactDetail.length == 0 && filterData.length == 0 && <p className="text-center">No Contacts To Show</p>
+                    !spinner && contactDetail.length == 0 && filterData.length == 0 && <p className="text-center pt-2">No Contacts To Show</p>
                 }
             </div>
 
@@ -144,4 +144,3 @@ function Header() {
     )
 };
 
-export default Header;
